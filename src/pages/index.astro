@@ -1,8 +1,29 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import mainimage from '../assets/Vector.svg?url';
+
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout>
-	<Welcome />
+	<div class="page-center">
+		<img src={mainimage} alt="Vector graphic" class="responsive" />
+	</div>
 </Layout>
+
+<style>
+  .page-center {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+  }
+
+  .page-center img.responsive {
+    max-width: 100%;
+    width: min(70vw, 900px);
+    height: auto;
+    display: block;
+  }
+</style>
