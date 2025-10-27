@@ -1,1 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@75..112.5,100..800&display=swap');
 @import "tailwindcss";
+
+@theme {
+  --font-martian: "Martian Mono", monospace;
+}
