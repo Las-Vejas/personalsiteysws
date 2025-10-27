@@ -1,72 +1,15 @@
 ---
-import mainimage from '../assets/Vector.svg?url';
-import cliparrow from '../assets/clip + arrow.svg?url';
-import githubarrow from '../assets/github + arrow.svg?url';
-import packagearrow from '../assets/package + arrow.svg?url';
-
 import Layout from '../layouts/Layout.astro';
+import '../styles/global.css';
 ---
-
 <Layout>
-	<div class="page-center">
-		<!-- wrap main image so icons can be positioned relative to it -->
-		<div class="image-wrap">
-			<img src={mainimage} alt="Vector graphic" class="responsive" />
-
-			<!-- small icons positioned over the main image -->
-			<a href="#" aria-label="Clip link"><img src={cliparrow} alt="Clip and arrow graphic" class="icon clip" /></a>
-			<a href="#" aria-label="GitHub link"><img src={githubarrow} alt="GitHub and arrow graphic" class="icon gh" /></a>
-			<a href="#" aria-label="Package link"><img src={packagearrow} alt="Package and arrow graphic" class="icon package" /></a>
-		</div>
+	<div class="object-center w-auto h-auto flex justify-center">
+		<a href="#"><img src="../src/assets/Vector.svg" class="h-30 w-40 object-center" alt=""></a>
+	</div>
+	<div class="grid grid-cols-3 mx-auto p-5 text-center bg-black text-white gap-6">
+		<h1 class="border-2 border-lime-300 text-center content-center ">Vejas's Site</h1>
+		<p class="border-2 border-solid border-amber-300">Welcome to vejas.zip!</p>
+		<div class="border-2 border-red-500 content-center">i hate tailwind</div>
+		<div class="border-2 border-blue-300 content-center">i should learn normal css first</div>
 	</div>
 </Layout>
-
-<style>
-	.page-center {
-		position: fixed;
-		inset: 0;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		padding: 0 1rem;
-	}
-
-	.image-wrap {
-		position: relative;
-		display: inline-block;
-	}
-
-	.image-wrap img.responsive {
-		max-width: 100%;
-		width: min(70vw, 900px);
-		height: auto;
-		display: block;
-	}
-
-	.image-wrap img.icon {
-		position: absolute;
-		/* Size icons as a percentage of the image container so they scale with the image and keep their relative positions */
-		width: 12%;
-		max-width: 140px;
-		height: auto;
-		transform: translate(-50%, -50%);
-		cursor: pointer;
-	}
-
-	/* Approximate positions — adjust these to align exactly with the spots on your image */
-	.image-wrap img.clip {
-		left: 75%;
-		top: 20%;
-	}
-
-	.image-wrap img.gh {
-		left: 50%;
-		top: 80%;
-	}
-
-	.image-wrap img.package {
-		left: 37.9%;
-		top: 21%;
-		width: min(9vw, 120px);
-	}
-</style>
