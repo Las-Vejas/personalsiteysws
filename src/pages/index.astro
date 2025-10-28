@@ -3,9 +3,13 @@ import Layout from '../layouts/Layout.astro';
 import Nav from '../components/navbar.astro';
 import '../styles/global.css';
 import Vector from '../assets/Vector.svg?url';
+import placement from '../assets/logo.svg?url';
 ---
 <Layout>
 <Nav />
 <h1 class="text-4xl font-bold text-center mt-10">Welcome to vejas.zip!</h1>
-<img src={Vector} alt="lasvejas" class="mx-auto my-5" />
+<div>
+    <img src={placement} alt="lasvejas" class="mx-auto my-5" />
+</div>
+
 </Layout>
