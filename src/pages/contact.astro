@@ -13,22 +13,22 @@ import Nav from '../components/navbar.astro';
 <div class="flex justify-center items-end m-10">
 <div class="flex flex-col w-full max-w-xl gap-4 bg-gray-300/15 p-5 rounded-xl border border-gray-400/50">
 <div class="font-bold font-martian text-xl text-center">Contact form</div>
-  <form action="https://formsubmit.co/" method="POST" class="space-y-3">
+  <form action="https://formsubmit.co/vejasdev@icloud.com" method="POST" class="space-y-3">
   <label class="block">
     <span class="block mb-1">Your name:</span>
     <input type="text" name="name" placeholder="Enter your name" class="block w-full rounded-md border border-gray-500 bg-white/5 px-3 py-1.5 text-base outline-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:outline-indigo-500 sm:text-sm" id="name">
   </label>
   <label class="block">
     <span class="block mb-1">Your email:</span>
-    <input type="email" name="email" class="block w-full rounded-md border border-gray-500 bg-white/5 px-3 py-1.5 text-base outline-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:outline-indigo-500 sm:text-sm" id="email">
+    <input type="email" placeholder="example@vejas.zip" name="email" class="block w-full rounded-md border border-gray-500 bg-white/5 px-3 py-1.5 text-base outline-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:outline-indigo-500 sm:text-sm" id="email">
   </label>
   <label class="block">
     <span class="block mb-1">Your message:</span>
-    <textarea name="message" class="block w-full rounded-md border border-gray-500 bg-white/5 px-3 py-1.5 text-base outline-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:outline-indigo-500 sm:text-sm" id="message" rows="6"></textarea>
+    <textarea name="message" placeholder="Your message goes here..." class="block w-full rounded-md border border-gray-500 bg-white/5 px-3 py-1.5 text-base outline-1 outline-white/10 placeholder:text-gray-500 focus:outline-2 focus:outline-indigo-500 sm:text-sm" id="message" rows="6"></textarea>
   </label>
   <!-- your other form fields go here -->
   <button class="self-center bg-blue-500 text-white rounded-md px-4 py-2 hover:bg-blue-600 hover:shadow-2xl" type="submit">Send</button>
-  <input type="hidden" name="_next" value="/">
+  <input type="hidden" name="_next" value="https://new.vejas.site/contact">
 </form>
 </div>
 </div>
