@@ -12,7 +12,7 @@ export async function POST({ request }: APIContext) {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({
-      text: `📩 New form submission:\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
+      text: `New form submission:\nName: ${name}\nEmail: ${email}\nMessage: ${message}`
     }),
   });
 
