@@ -1,15 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import Nav from '../components/navbar.astro';
+import Nav from '../components/navmain.astro';
 import '../styles/global.css';
 import Vector from '../assets/Vector.svg?url';
-import placement from '../assets/logo.svg?url';
 import ClipArrow from '../assets/clip + arrow.svg?url';
 import GithubArrow from '../assets/github + arrow.svg?url';
 import InfoArrow from '../assets/info + arrow.svg?url';
 import PackageArrow from '../assets/package + arrow.svg?url';
 ---
 <Layout>
+    <div class="max-h-max min-h-100vh">
 <Nav />
 
 <div class="flex flex-col items-center content-center justify-center min-h-screen ">
@@ -17,10 +17,10 @@ import PackageArrow from '../assets/package + arrow.svg?url';
             <div class="relative inline-block w-full max-w-3xl mx-10">
                 <img src={Vector} alt="lasvejas" class="block w-full h-auto mx-auto my-5" />
                 <div class="hidden md:block">
-                                <a href="/contact"><img src={ClipArrow} alt="clip" class="absolute" style="width:17.5%; left:77.2%; top:19.9%; transform:translate(-50%,-50%); pointer-events:none;" /></a>
-                <a href="https://github.com/las-vejas"><img src={GithubArrow} alt="github" class="absolute" style="width:16%; left:47.55%; top:80.9%; transform:translate(-50%,-50%); pointer-events:none;" /></a>
-                <a href="/about"><img src={InfoArrow} alt="info" class="absolute" style="width:14%; left:101.47%; top:38.9%; transform:translate(-50%,-50%); pointer-events:none;" /></a>
-                <a href="/projects"><img src={PackageArrow} alt="package" class="absolute" style="width:16%; left:51.3%; top:25%; transform:translate(-50%,-50%); pointer-events:pointer;" /></a>
+                <a href="/contact"><img src={ClipArrow} alt="clip" class="absolute" style="width:17.5%; left:77.2%; top:19.9%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+                <a href="https://github.com/las-vejas"><img src={GithubArrow} alt="github" class="absolute" style="width:16%; left:47.55%; top:80.9%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+                <a href="/about"><img src={InfoArrow} alt="info" class="absolute" style="width:14%; left:101.47%; top:38.9%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+                <a href="/projects"><img src={PackageArrow} alt="package" class="absolute" style="width:16%; left:51.3%; top:25%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
             </div>
                 <div class="space-x-6 text-center desktop: hidden">
                     <a href="">About Me</a>
@@ -32,5 +32,5 @@ import PackageArrow from '../assets/package + arrow.svg?url';
         </div>
     <h1 class="text-2xl font-bold text-center mt-10 font-mono">Welcome to my corner of the web!</h1>
 </div>
-
+</div>
 </Layout>

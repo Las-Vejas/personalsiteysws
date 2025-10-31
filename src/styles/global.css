@@ -4,3 +4,7 @@
 @theme {
   --font-martian: "Martian Mono", monospace;
 }
+
+html, body {
+  overflow-x: hidden;
+}
