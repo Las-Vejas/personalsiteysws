@@ -3,10 +3,10 @@ import Layout from '../layouts/Layout.astro';
 import Nav from '../components/navmain.astro';
 import '../styles/global.css';
 import Vector from '../assets/Vector.svg?url';
-import ClipArrow from '../assets/clip + arrow.svg?url';
-import GithubArrow from '../assets/github + arrow.svg?url';
-import InfoArrow from '../assets/info + arrow.svg?url';
-import PackageArrow from '../assets/package + arrow.svg?url';
+import ClipArrow from '../assets/clipita.svg?url';
+import GithubArrow from '../assets/githubita.svg?url';
+import InfoArrow from '../assets/infoita.svg?url';
+import PackageArrow from '../assets/packageita.svg?url';
 ---
 <Layout>
     <div class="max-h-max min-h-100vh">
@@ -17,10 +17,11 @@ import PackageArrow from '../assets/package + arrow.svg?url';
             <div class="relative inline-block w-full max-w-3xl mx-10">
                 <img src={Vector} alt="lasvejas" class="block w-full h-auto mx-auto my-5" />
                 <div class="hidden md:block">
-                <a href="/contact"><img src={ClipArrow} alt="clip" class="absolute" style="width:17.5%; left:77.2%; top:19.9%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
-                <a href="https://github.com/las-vejas"><img src={GithubArrow} alt="github" class="absolute" style="width:16%; left:47.55%; top:80.9%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
-                <a href="/about"><img src={InfoArrow} alt="info" class="absolute" style="width:14%; left:101.47%; top:38.9%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
-                <a href="/projects"><img src={PackageArrow} alt="package" class="absolute" style="width:16%; left:51.3%; top:25%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+                <a href="/contact"><img src={ClipArrow} alt="clip" class="absolute" style=" left:82.6%; top:16.5%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+                <a href="https://github.com/las-vejas"><img src={GithubArrow} alt="github" class="absolute" style=" left:52.4%; top:86.7%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+                <a href="/about"><img src={InfoArrow} alt="info" class="absolute" style="left:108%; top:35.8%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+                <a href="/projects"><img src={PackageArrow} alt="package" class="absolute" style=" left:47.3%; top:16.1%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+
             </div>
                 <div class="space-x-6 text-center desktop: hidden">
                     <a href="">About Me</a>
