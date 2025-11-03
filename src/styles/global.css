@@ -7,4 +7,24 @@
 
 html, body {
   overflow-x: hidden;
+  overflow-y: hidden;
+  background-color: var(--background);
+  
+}
+
+@layer base {
+  :root {
+    --text: #1b1509;
+    --background: #f9f4ec;
+    --primary: #d1941a;
+    --secondary: #b3efd1;
+    --accent: #8cc5ed;
+  }
+  .dark {
+    --text: #f6f0e4;
+    --background: #130e06;
+    --primary: #e5a82e;
+    --secondary: #104c2e;
+    --accent: #124a73;
+  }
 }
