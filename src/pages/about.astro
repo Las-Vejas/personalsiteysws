@@ -3,16 +3,20 @@ import Layout from '../layouts/Layout.astro';
 import Nav from '../components/navbar.astro';
 import '../styles/global.css';
 ---
-<Layout>
+<head>
+    <title>vejas.zip - about</title>
+</head>
+
+<Layout class:list=}>
 <Nav />
-<div class="m-5">
+<div class="m-5 space-x-2">
 <h1 class="text-4xl font-bold text-left mt-10 mb-3">About Me</h1>
 <p class="text-xl">My name is Vejas</p>
 <p class="">I like to make electronics projects and play piano</p>
 buttons
-<div>
-    <img src="../assets/88x31/" alt="">
-    <img src="../assets/88x31/" class="w-" alt="">
+<div class="flex columns-5 space-x-2">
+    <img src="../assets/88x31/" class="w-(81px) h-(31px) shadow-2xs" alt="">
+    <img src="../assets/88x31/" class="w-(81px) h-(31px) shadow-2xs" alt="">
 </div>
 </div>
 </Layout>
