@@ -2,21 +2,36 @@
 import Layout from '../layouts/Layout.astro';
 import Nav from '../components/navbar.astro';
 import '../styles/global.css';
+import htmlgif from '../assets/88x31/html.gif?url';
+import viewcomputer from '../assets/88x31/IMG_0036.gif?url';
+import applegif from '../assets/88x31/apple.gif?url';
 ---
 <head>
     <title>vejas.zip - about</title>
 </head>
 
-<Layout class:list=}>
+<Layout>
 <Nav />
-<div class="m-5 space-x-2">
-<h1 class="text-4xl font-bold text-left mt-10 mb-3">About Me</h1>
-<p class="text-xl">My name is Vejas</p>
-<p class="">I like to make electronics projects and play piano</p>
-buttons
+<div class="m-5 space-x-2 space-y-5">
+<h1 class="text-text text-4xl font-bold text-center mt-10 mb-3">About Me</h1>
+<p class="text-2xl text-center mx-20">My name is Vejas, I am 15 years old and I like to make electronics and music.</p>
+<p class="text-2xl text-center mx-20">I joined <a href="https://hackclub.com" target="_blank" class="text-blue-600 hover:text-2xl hover:text-underline hover:decoration-wavy hover:text-blue-500">Hack Club</a> to learn more about electronics and programming. From joining, I have created several electronics projects and this website is (currently) my biggest software one.</p>
+<p class="text-2xl text-center mx-20">I f you want to find out more about what I like scroll down to find out my favorite music, games, etc. For projects go to my <a href="/projects" class="text-blue-600 hover:text-2xl hover:text-underline hover:decoration-wavy hover:text-blue-500">projects page</a>.</p>
+<div>
+    <h2 class="text-3xl font-bold text-center">My favorites</h2>
+
+    <div class="grid grid-cols-2 md:grid-cols-1 ">
+        <div>
+            <h3>Music</h3>
+
+        </div>
+    </div>
 <div class="flex columns-5 space-x-2">
-    <img src="../assets/88x31/" class="w-(81px) h-(31px) shadow-2xs" alt="">
-    <img src="../assets/88x31/" class="w-(81px) h-(31px) shadow-2xs" alt="">
+    <img src={htmlgif} class="w-(81px) h-(31px) shadow-2xs" alt="">
+    <img src={viewcomputer} class="w-(81px) h-(31px) shadow-2md" alt="">
+    <img src={applegif} class="w-(81px) h-(31px) shadow-2xl" alt="">
 </div>
+</div>
+
 </div>
 </Layout>

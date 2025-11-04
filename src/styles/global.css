@@ -1,8 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wdth,wght@75..112.5,100..800&display=swap');
+
 @import "tailwindcss";
 
 @theme {
-  --font-martian: "Martian Mono", monospace;
+  --color-text: #042009;
+  --color-background: #edfdef;
+  --color-primary: #23e146;
+  --color-secondary: #7cbdee;
+  --color-accent: #617aea;
+
+  --color-text-dark: #dffbe4;
+  --color-background-dark: #021204;
+  --color-primary-dark: #1edc41;
+  --color-secondary-dark: #115283;
+  --color-accent-dark: #152e9e;
+}
+
+:root {
+    --text: #042009;
+    --background: #edfdef;
+    --primary: #23e146;
+    --secondary: #7cbdee;
+    --accent: #617aea;
+  }
+.dark {
+  --text: #dffbe4;
+  --background: #021204;
+  --primary: #1edc41;
+  --secondary: #115283;
+  --accent: #152e9e;
 }
 
 html, body {
@@ -10,21 +36,4 @@ html, body {
   overflow-y: hidden;
   background-color: var(--background);
   color: var(--text);
-}
-
-@layer base {
-  :root {
-    --text: #042009;
-    --background: #edfdef;
-    --primary: #23e146;
-    --secondary: #7cbdee;
-    --accent: #617aea;
-  }
-  .dark {
-    --text: #dffbe4;
-    --background: #021204;
-    --primary: #1edc41;
-    --secondary: #115283;
-    --accent: #152e9e;
-  }
 }

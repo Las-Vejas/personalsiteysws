@@ -12,9 +12,9 @@ import Analytics from "@vercel/analytics/astro"
 		<meta name="generator" content={Astro.generator} />
 		<title>vejas.zip</title>
 	</head>
-	<body>
+	<Analytics />
+	<SpeedInsights />
+	<body class="bg-background dark:bg-background-dark dark:text-text-dark text-text transition-colors duration-500">
 		<slot />
 	</body>
-<SpeedInsights />
-<Analytics />
-</html>
+	</html>
