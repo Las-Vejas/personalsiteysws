@@ -12,20 +12,18 @@ import PackageArrow from '../assets/packageita.svg?url';
     <title>vejas.zip</title>
 </head>
 <Layout>
-    <div class="max-h-80vh">
 <Nav />
-
-<div class="flex flex-col items-center content-center justify-center min-h-screen max-height-90vh">
+<div class="flex flex-col items-center content-center justify-center min-h-screen max-h-90vh">
         <div class="w-full flex justify-center mx-auto">
             <div class="relative inline-block w-full mx-auto max-w-3xl">
                 <img src={Vector} alt="lasvejas" class="block w-full h-auto mx-auto my-5" />
                 <div class="hidden md:block">
-                <a href="/contact"><img src={ClipArrow} alt="clip" class="absolute hover:hide" style="left:82.6%; top:16.5%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
-                <a href="https://github.com/las-vejas"><img src={GithubArrow} alt="github" class="absolute hover:fill-amber-400" style=" left:52.4%; top:86.7%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
-                <a href="/about"><img src={InfoArrow} alt="info" class="absolute hover:fill-amber-400" style="left:108%; top:35.8%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
-                <a href="/projects"><img src={PackageArrow} alt="package" class="absolute hover:fill-amber-400" style="left:47.3%; top:16.1%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+                <a href="/contact"><img src={ClipArrow} alt="clip" class="absolute hover:hidden" style="left:82.6%; top:16.5%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+                <a href="https://github.com/las-vejas"><img src={GithubArrow} alt="github" class="absolute hover:hidden" style=" left:52.5%; top:86.9%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+                <a href="/about"><img src={InfoArrow} alt="info" class="absolute hover:hidden" style="left:108%; top:35.8%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
+                <a href="/projects"><img src={PackageArrow} alt="package" class="absolute hover:hidden" style="left:47.3%; top:16.1%; transform:translate(-50%,-50%); pointer-events:auto;" /></a>
             </div>
-                <div class="space-x-6 text-center desktop: hidden">
+                <div class="space-x-6 text-center md:hidden sm:flex mobile:justify-center mobile:space-x-6 mt-4">
                     <a href="">About Me</a>
                     <a href="">Contact Me</a>
                     <a href="">Projects</a>
@@ -34,6 +32,5 @@ import PackageArrow from '../assets/packageita.svg?url';
             </div>
         </div>
     <h1 class="text-2xl font-bold text-center mt-10 font-mono dark:text--text">Welcome to my corner of the web!</h1>
-</div>
 </div>
 </Layout>
